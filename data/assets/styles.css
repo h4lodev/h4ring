@@ -5,8 +5,8 @@ body {
   gap: 1.5rem;
   padding: 2rem 1rem;
 
-  background-color: #24273a;
-  color: #cad3f5;
+  background-color: #000000;
+  color: #FCA300;
 
   font-family:
     system-ui,
@@ -23,11 +23,11 @@ body {
 }
 
 a:not(.member-link) {
-  color: #8aadf4;
+  color: #fff01f;
   text-decoration: none;
 
   &:visited {
-    color: #b7bdf8;
+    color: #fff01f;
   }
 
   &:hover {
@@ -36,7 +36,7 @@ a:not(.member-link) {
 }
 
 .member-link {
-  color: #cad3f5;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -66,12 +66,12 @@ main > a {
   font-weight: bold;
   margin-bottom: 1.5rem;
   padding: 0.5rem 1rem;
-  background-color: #363a4f;
+  background-color: #0c0c0c;
   border-radius: 0.5rem;
   transition: background-color 0.2s;
 }
 main > a:hover {
-  background-color: #494d64;
+  background-color: #2f2f2f;
 }
 
 ul {
@@ -85,14 +85,14 @@ ul {
 }
 
 li {
-  background-color: #363a4f;
+  background-color: #0c0c0c;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
   transition: background-color 0.2s;
 }
 li:hover {
-  background-color: #494d64;
+  background-color: #0c0c0c;
 }
 
 footer {
