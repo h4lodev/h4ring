@@ -1,64 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <link rel="stylesheet" href="./styles.css" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ ring_name }} List</title>
-  </head>
-  <body>
-    <h1>{{ ring_name }} List</h1>
-    <p>{{ ring_description }}</p>
-    <p>
-      Add all sites with declared RSS feeds to your feed reader with this
-      <a href="{{ opml }}">OPML</a> link.
-    </p>
+    <link rel="stylesheet" href="./styles.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Catppuccin Webring</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Catppuccin Webring!</h1>
+        </header>
 
-    {% if sites %}
-    <table>
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">URL</th>
-          <th scope="col">About</th>
-          <th scope="col">Owner</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for site in sites %}
-        <tr>
-          <td>{{ site.website.slug }}</td>
-          <td>
-            <a href="{{ site.website.url }}" target="_blank"
-              >{{ site.website.url }}</a
-            >
-            {% if site.website.rss %}
-            <a href="{{ site.website.rss }}" target="_blank">[rss]</a>
-            {% endif %} {% if site.website.atom %}
-            <a href="{{ site.website.atom }}" target="_blank">[atom]</a>
-            {% endif %}
-          </td>
-          <td>{{ site.website.about | default(value="") }}</td>
-          <td>{{ site.website.owner | default(value="") }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    {% endif %} {% if failed_sites %} The following member sites were not
-    included in this iteration of the webring:
-    <ul>
-      {% for site in failed_sites %}
-      <li>{{ site.website.url }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
+        <main>
+            <a href="/rand">Enter the webring</a>
 
-    <br />
-    <footer>
-      <p>Last updated: {{ current_time }}</p>
-      <p>
-        Powered by <a href="https://github.com/k3rs3d/ringfairy">ringfairy</a>!
-      </p>
-    </footer>
-  </body>
+            <ul>
+                {% for site in sites %}
+                <li>
+                    <a class="member-link" href="{{ site.website.url | safe }}"
+                        >{{ site.website.name }}</a
+                    >
+                </li>
+                {% endfor %}
+            </ul>
+        </main>
+
+        <footer>
+            <p>Last updated at {{ current_time }}.</p>
+            <p>
+                This webring is not officially affiliated with
+                <a href="https://catppuccin.com/">Catppuccin</a>.
+            </p>
+            <p>
+                Find us on
+                <a href="https://github.com/isabelroses/catppuccin-webring"
+                    >GitHub</a
+                >.
+            </p>
+            <p>
+                Powered by
+                <a href="https://github.com/k3rs3d/ringfairy">ringfairy</a>!
+            </p>
+        </footer>
+    </body>
 </html>
