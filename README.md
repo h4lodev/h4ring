@@ -34,9 +34,9 @@
   After you've filled out that PR, you can add the buttons of the webring to your site! Make sure to place your SLUG in the urls!
 
   ```html
-  <a href="https://ctp-webr.ing/YOUR_SLUG/previous">&larr;</a
-  ><a href="https://ctp-webr.ing/">H4RING</a
-  ><a href="https://ctp-webr.ing/YOUR_SLUG/next">&rarr;</a>
+  <a href="https://webring.h4lo.ca/YOUR_SLUG/previous">&larr;</a
+  ><a href="https://webring.h4lo.ca/">H4RING</a
+  ><a href="https://webring.h4lo.ca/YOUR_SLUG/next">&rarr;</a>
 
 ## Special Thanks:
 
