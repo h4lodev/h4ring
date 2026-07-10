@@ -1,14 +1,47 @@
-# `h4ring`
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/h4lodev/h4webv2/refs/heads/master/src/assets/logo.svg" width="100" alt="Logo"/><br/>
+	H4RING <a href="https://en.wikipedia.org/wiki/Webring">Webring</a>
 
-bio in progress
-below is the desc of a webring from the ringfairy repo
+</h3>
 
-## 🔮 What is a Webring?
+<p align="center">
+	<a href="https://github.com/isabelroses/catppuccin-webring/contributors"><img src="https://img.shields.io/github/contributors/h4lodev/h4ring?colorA=99a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
 
-A webring is a collection of websites linked together in a loop. Each website contains links to the previous and next websites in the ring. If you navigate far enough, eventually you end up back where you started!
+## How to join
 
-<a href="https://upload.wikimedia.org/wikipedia/commons/9/97/Webringwork.png"><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Webringwork.png" width="512" alt="Webring example graphic"/></a>
+- You may be asking yourself: "How can I join this super cool webring???"\
+  The answer to that amazing question is to open a pull request with your website added to the ``websites.json`` file!
 
-Webrings were popular in the early days of the internet as a way for website owners to promote each other's content and encourage community engagement.
+  - Full **title** of your site
+  - A brief **description** of your site
+  - Some form of **contact info** (can be basically anything)
+  - If you have one, your **RSS** link
 
-This is a tool for anyone who has some kind of personal website or blog and wishes to connect with others. You can use it to grow your own online community from scratch!
+  An entry might look like:
+
+  ```json
+  {
+    "name": "Example Name",
+    "slug": "example",
+    "about": "Boring example",
+    "url": "https://example.com/",
+    "rss": "https://example.com/index.xml",
+    "owner": "person@example.com"
+  }
+  ```
+
+  After you've filled out that PR, you can add the buttons of the webring to your site! Make sure to place your SLUG in the urls!
+
+  ```html
+  <a href="https://ctp-webr.ing/YOUR_SLUG/previous">&larr;</a
+  ><a href="https://ctp-webr.ing/">H4RING</a
+  ><a href="https://ctp-webr.ing/YOUR_SLUG/next">&rarr;</a>
+
+## Special Thanks:
+
+- [Isabel Roses](https://github.com/isabelroses) For the amazing workflow code
+
+
+
+  
