@@ -37,6 +37,7 @@
   <a href="https://webring.h4lo.ca/YOUR_SLUG/previous">&larr;</a
   ><a href="https://webring.h4lo.ca/">H4RING</a
   ><a href="https://webring.h4lo.ca/YOUR_SLUG/next">&rarr;</a>
+  ```
 
 ## Special Thanks:
 
