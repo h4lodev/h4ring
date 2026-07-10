@@ -11,7 +11,7 @@
 ## How to join
 
 - You may be asking yourself: "How can I join this super cool webring???"\
-  The answer to that amazing question is to open a pull request with your website added to the ``websites.json`` file!
+  The answer to that amazing question is to open a pull request with your website added to the `websites.json` file!
 
   - Full **title** of your site
   - A brief **description** of your site
@@ -37,11 +37,8 @@
   <a href="https://ctp-webr.ing/YOUR_SLUG/previous">&larr;</a
   ><a href="https://ctp-webr.ing/">H4RING</a
   ><a href="https://ctp-webr.ing/YOUR_SLUG/next">&rarr;</a>
+  ```
 
 ## Special Thanks:
 
 - [Isabel Roses](https://github.com/isabelroses) For the amazing workflow code
-
-
-
-  
